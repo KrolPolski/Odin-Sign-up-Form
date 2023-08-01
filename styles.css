@@ -7,7 +7,7 @@ body {
     height: 100vh;
 }
 div.sidebar {
-    flex: 1 1 20%;
+    flex: 1 1 auto;
     background-image: url('maininki.jpg');
     align-items: space-between;
     flex-flow: column wrap;
@@ -16,28 +16,57 @@ div.sidebar {
 }
 
 div.logo {
-    background-color: black;
-    opacity: .3;
+    background:rgb(0,0,0,.5);
     color: white;
     font-family: 'Norse-Bold';
-    font-size: 13em;
+    font-size: 11em;
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
 }
+
 div.logotext {
     opacity: 1;
-
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 25px;
+}
+div.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 div.main {
-    flex: 3 1 60%;
+    flex: 2 1 auto;
     display: flex;
     background-color: #F0F0F0;
     flex-flow: column wrap;
+    justify-content: center;
+    
+}
+
+div.form {
+    background-color: white;
 }
 
 p.credit {
     text-align: center;
     color: white;
+}
+
+button {
+    color: white;
+    background-color: darkgreen;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+}
+
+a {
+    color: darkgreen;
+    text-decoration: none;
 }
